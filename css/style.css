@@ -1,1 +1,26 @@
-body {}
+/* style.css */
+.dark-mode-toggle {
+    cursor: pointer;
+    position: relative;
+}
+
+.dark-mode-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-icon.sun {
+    color: #FFD700;
+}
+
+.dark-mode-icon.moon {
+    color: #888;
+}
+
+.dark-mode-toggle.active .dark-mode-icon.sun {
+    transform: translateY(-100%);
+}
+
+.dark-mode-toggle.active .dark-mode-icon.moon {
+    transform: translateY(100%);
+}
